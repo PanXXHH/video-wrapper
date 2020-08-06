@@ -8,7 +8,7 @@ type %EnterSige%>>%RunnerName%.bat
 type .\header\define.dosblock.bat>>%RunnerName%.bat
 type %EnterSige%>>%RunnerName%.bat
 
-for /f "delims= " %%a in (.\public\links.conf) do (
+for /f "delims= " %%a in (.\public\package.conf) do (
 type .\public\%%a>>%RunnerName%.bat
 )
 start /wait/b cmd /c %RunnerName%.bat
